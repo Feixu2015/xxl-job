@@ -16,6 +16,8 @@
     <url>https://www.xuxueli.com/</url>
 
     <properties>
+        <!--<groovy-all.version>4.0.24</groovy-all.version>-->
+        <groovy.http.builder.version>0.7.1</groovy.http.builder.version>
     </properties>
 
     <dependencyManagement>
@@ -49,6 +51,19 @@
             <artifactId>xxl-job-core</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
+
+        <!--groovy-->
+        <dependency>
+            <groupId>org.apache.groovy</groupId>
+            <artifactId>groovy-all</artifactId>
+            <version>${groovy.version}</version>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.groovy.modules.http-builder</groupId>
+            <artifactId>http-builder</artifactId>
+            <version>${groovy.http.builder.version}</version>
+        </dependency>        
 
     </dependencies>
 
