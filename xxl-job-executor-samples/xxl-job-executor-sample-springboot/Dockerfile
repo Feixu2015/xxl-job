@@ -1,4 +1,6 @@
-FROM openjdk:8-jre-slim
+# 基于官方 OpenJDK 8 镜像
+FROM openjdk:8-jdk
+
 MAINTAINER xuxueli
 
 ENV PARAMS=""
